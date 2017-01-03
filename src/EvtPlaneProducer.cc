@@ -234,9 +234,9 @@ EvtPlaneProducer::EvtPlaneProducer(const edm::ParameterSet& iConfig):
   caloCentRefWidth_ ( iConfig.getParameter<double>("caloCentRefWidth") ),
   CentBinCompression_ ( iConfig.getParameter<int>("CentBinCompression") )
 {
-
+  
   nCentBins_ = 200.;
-
+  
   if(iConfig.exists("nonDefaultGlauberModel")){
     centralityMC_ = iConfig.getParameter<std::string>("nonDefaultGlauberModel");
   }
